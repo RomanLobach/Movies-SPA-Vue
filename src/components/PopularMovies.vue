@@ -1,5 +1,5 @@
 <template>
-  <v-container class="popular">
+  <v-container tag="section" class="popular mb-10">
     <h2 class="popular__title">What's popular</h2>
     <v-row>
       <MovieItem 

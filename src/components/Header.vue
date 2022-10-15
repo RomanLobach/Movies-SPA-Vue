@@ -1,5 +1,5 @@
 <template>
-  <v-container class="header-container white--text px-3">
+  <v-container tag="nav" class="header-container white--text px-3">
     <div class="wraper">
       <v-toolbar-title class="title text-h4 font-weight-black margin-class" color="white">
         <router-link class="logo" to="/">

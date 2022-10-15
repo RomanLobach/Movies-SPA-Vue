@@ -1,5 +1,6 @@
 <template>
   <v-col
+    tag="article"
     xs="12"
     sm="6"
     md="3"
@@ -17,7 +18,7 @@
 
       <div class="card__text">
         <router-link 
-        class="card__title-link text-decoration-none font-weight-bold" 
+        class="card__title-link text-decoration-none font-weight-bold text-h6" 
         :to="{ name: 'details', params: { movieId: movie.id }}"
         >
           {{movie.title}}
@@ -34,13 +35,13 @@
             size="16"
           ></v-rating>
           <div>
-            <span class="text-caption text-uppercase">rait:</span>
-            <span class="font-weight-bold">
+            <span class="text-subtitle-1">rait:</span>
+            <span class="text-subtitle-1 font-weight-bold">
               {{ movie.vote_average }}
             </span>
           </div>
 
-          <span class="card__date">
+          <span class="card__date text-body-1">
               {{convertedDate}}
           </span>
         </div>
@@ -61,10 +62,10 @@ export default {
     }
   },
   computed: {
-    posterPath: function () {
+    posterPath() {
       return generateImageUrl(this.movie.poster_path)
     },
-    convertedDate: function () {
+    convertedDate() {
       return convertDate(this.movie.release_date)
     }
   },

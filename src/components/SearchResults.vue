@@ -1,5 +1,5 @@
 <template>
-  <v-container class="search-results">
+  <v-container tag="section" class="search-results">
     <h2 class="search-results__title">Search results</h2>
     <v-row>
       <MovieItem 

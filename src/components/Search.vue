@@ -1,5 +1,5 @@
 <template>
-  <div class="search-backgrnd">
+  <section class="search-backgrnd">
     <v-container class="search">
       <h1 class="search__title">Welcome! Discover millions of movies...</h1>
       <form class="search__form">
@@ -23,10 +23,10 @@
           @click="submit"
         >
           Search
-        </v-btn>
+        </v-btn> <!-- отработка события submit происходит только один раз. путь для router генерится, но по этому эндпоинту перехода не происходит -->
       </form>
     </v-container>
-  </div>
+  </section>
 </template>
 
 <script>
